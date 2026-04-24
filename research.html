@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research Hub - TruthLens</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="tl-header">
+      <div class="tl-header__inner wrap">
+        <a class="tl-brand" href="index.html">
+          <img
+            src="assets/figma/logo-mark.svg"
+            width="24"
+            height="24"
+            alt=""
+          />
+          <span class="tl-brand__text">TruthLens</span>
+        </a>
+        <button
+          type="button"
+          class="tl-nav-toggle"
+          aria-expanded="false"
+          aria-controls="tl-nav"
+        >
+          Menu
+        </button>
+        <nav id="tl-nav" class="tl-nav" aria-label="Primary">
+          <div class="tl-nav__track">
+            <a class="tl-nav__item" href="index.html">Home</a>
+            <a class="tl-nav__item" href="detection.html">Detection</a>
+            <div class="tl-nav__drop">
+              <a class="tl-nav__item is-active" href="research.html">Research</a>
+              <div class="tl-nav__drop-panel tl-nav__drop-panel--soft tl-nav__drop-panel--research" role="menu">
+                <a href="research-key-studies.html" role="menuitem">Key Studies</a>
+                <a href="research-news.html" role="menuitem">News</a>
+              </div>
+            </div>
+            <div class="tl-nav__drop">
+              <a class="tl-nav__item" href="resources.html">Resources</a>
+              <div class="tl-nav__drop-panel tl-nav__drop-panel--soft tl-nav__drop-panel--resources" role="menu">
+                <a href="resources-verification-hub.html" role="menuitem">Verification Hub</a>
+                <a href="resources-ai-risks.html" role="menuitem">AI Risks &amp; Detection</a>
+              </div>
+            </div>
+          </div>
+          <a
+            class="tl-contact"
+            href="mailto:hello@truthlens.example"
+          >
+            <img
+              src="assets/figma/phone-icon.svg"
+              alt=""
+              width="18"
+              height="18"
+            />
+            <span>Contact Us</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="tl-hub">
+      <div class="tl-hub__bg" aria-hidden="true">
+        <img
+          src="assets/figma/research-hero.png"
+          alt=""
+        />
+      </div>
+      <div class="tl-hub__grad" aria-hidden="true"></div>
+      <div class="tl-hub__veil" aria-hidden="true"></div>
+
+      <div class="tl-hub__content wrap">
+        <h1 class="tl-h2">Misinformation Research Hub</h1>
+        <p class="tl-lead">
+          Peer-reviewed studies and real-world news cases exploring how false
+          information spreads, why it matters, and what we can do about it.
+        </p>
+      </div>
+    </section>
+
+    <footer class="tl-footer">
+      <div class="wrap">
+        <div class="tl-footer__grid">
+          <div>
+            <div class="tl-footer__brand">TruthLens</div>
+            <p style="margin: 0; max-width: 280px">
+              Spot the fake. Know the truth.
+            </p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="detection.html">Detection</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Research</h4>
+            <ul>
+              <li><a href="research.html">Research Hub</a></li>
+              <li><a href="research-key-studies.html">Key Studies</a></li>
+              <li><a href="research-news.html">News</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="resources.html">Overview</a></li>
+              <li><a href="resources-verification-hub.html">Verification Hub</a></li>
+              <li><a href="resources-ai-risks.html">AI Risks &amp; Detection</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="tl-footer__legal">&copy; TruthLens</p>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+  </body>
+</html>
+

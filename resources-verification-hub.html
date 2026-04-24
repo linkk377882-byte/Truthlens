@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verification Hub - TruthLens</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="tl-header">
+      <div class="tl-header__inner wrap">
+        <a class="tl-brand" href="index.html">
+          <img
+            src="assets/figma/logo-mark.svg"
+            width="24"
+            height="24"
+            alt=""
+          />
+          <span class="tl-brand__text">TruthLens</span>
+        </a>
+        <button
+          type="button"
+          class="tl-nav-toggle"
+          aria-expanded="false"
+          aria-controls="tl-nav"
+        >
+          Menu
+        </button>
+        <nav id="tl-nav" class="tl-nav" aria-label="Primary">
+          <div class="tl-nav__track">
+            <a class="tl-nav__item" href="index.html">Home</a>
+            <a class="tl-nav__item" href="detection.html">Detection</a>
+            <div class="tl-nav__drop">
+              <a class="tl-nav__item" href="research.html">Research</a>
+              <div class="tl-nav__drop-panel tl-nav__drop-panel--soft tl-nav__drop-panel--research" role="menu">
+                <a href="research-key-studies.html" role="menuitem">Key Studies</a>
+                <a href="research-news.html" role="menuitem">News</a>
+              </div>
+            </div>
+            <div class="tl-nav__drop">
+              <a class="tl-nav__item is-active tl-nav__item--resources" href="resources.html"
+                >Resources</a
+              >
+              <div class="tl-nav__drop-panel tl-nav__drop-panel--soft tl-nav__drop-panel--resources" role="menu">
+                <a class="is-current" href="resources-verification-hub.html" role="menuitem">Verification Hub</a>
+                <a href="resources-ai-risks.html" role="menuitem">AI Risks &amp; Detection</a>
+              </div>
+            </div>
+          </div>
+          <a
+            class="tl-contact"
+            href="mailto:hello@truthlens.example"
+          >
+            <img
+              src="assets/figma/phone-icon.svg"
+              alt=""
+              width="18"
+              height="18"
+            />
+            <span>Contact Us</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="tl-rhero">
+      <div class="tl-rhero__bg" aria-hidden="true"></div>
+      <div class="tl-rhero__shot" aria-hidden="true">
+        <img src="assets/figma/resource-hero-phones.png" alt="" />
+      </div>
+      <div class="wrap">
+        <div class="tl-rhero__body">
+          <h1 class="tl-h2" style="text-align: left">Verification Hub</h1>
+          <p class="tl-body" style="max-width: none; text-align: left">
+            Provide instant and multi-dimensional media authenticity
+            verification tools, covering automatic scanning, manual
+            verification and traceability search.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="tl-section" style="padding-top: 3rem">
+      <div class="wrap">
+        <h2 class="tl-h2" style="text-align: center; margin-bottom: 4rem">
+          Detection Tools
+        </h2>
+
+        <div
+          id="tool-deepware"
+          class="tl-tool-grid"
+          data-href="https://scanner.deepware.ai/"
+          data-external="true"
+        >
+          <div class="tl-tool-grid__media">
+            <a
+              class="tl-tool-poster tl-card-link"
+              href="https://scanner.deepware.ai/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="tl-tool-poster__eyebrow">Scan &amp; Detect</span>
+              <span class="tl-tool-poster__title">Deepfake Videos</span>
+              <span class="tl-tool-poster__copy"
+                >Scan a suspicious video to find out if it has been
+                synthetically manipulated.</span
+              >
+              <span class="tl-tool-poster__copy"
+                ><strong>Contact Us</strong> for on-premise solutions.</span
+              >
+              <span class="tl-tool-poster__cta">GO TO SCANNER</span>
+            </a>
+          </div>
+          <div class="tl-tool-grid__text">
+            <div class="tl-tool-pill">
+              <span class="tl-tag">Tool - 1 :</span>
+              <span>Deepware Scanner</span>
+            </div>
+            <p>
+              <strong>Function:</strong> Specialized AI video scanning and
+              deepfake detection.<br /><br />
+              <strong>Technical Depth:</strong> Deepware operates as a
+              high-security gateway for video integrity. Unlike simple metadata
+              checks, it utilizes a sophisticated "ensemble" approach, running
+              multiple neural network models simultaneously to scan for facial
+              manipulation. It specifically targets the "FaceSwap" and
+              "LipSync" methods prevalent in modern deepfakes. The scanner
+              analyzes physiological signals that AI struggles to replicate,
+              such as the consistency of blood flow in skin
+              (photoplethysmography) and the natural irregularity of eye
+              movements. By providing a "Probability of Manipulation" score, it
+              allows users to see exactly which frames of a video exhibit
+              synthetic characteristics. In an era where "proof-of-personhood"
+              is critical, Deepware serves as a frontline defense against
+              synthetic identity theft and fabricated video evidence.
+            </p>
+          </div>
+        </div>
+
+        <div
+          id="tool-reality-defender"
+          class="tl-tool-grid tl-tool-grid--flip"
+          data-href="https://www.realitydefender.com/"
+          data-external="true"
+        >
+          <div class="tl-tool-grid__text">
+            <div class="tl-tool-pill">
+              <span class="tl-tag">Tool - 2 :</span>
+              <span>Reality Defender</span>
+            </div>
+            <p>
+              <strong>Function:</strong> Enterprise-grade multi-model detection
+              for audio, video, and images.<br /><br />
+              <strong>Technical Depth:</strong> Reality Defender is a
+              comprehensive, enterprise-grade platform designed to combat the
+              rising tide of "deepfake-as-a-service." Its architecture is
+              unique in its "multi-model" philosophy; rather than relying on a
+              single detection algorithm, it cross-references assets against a
+              massive library of known generative AI signatures. For audio
+              detection, it analyzes "spectral noise", the microscopic
+              mathematical patterns left behind by AI voice cloners that are
+              inaudible to the human ear. For imagery, it detects "tessellation
+              artifacts" and non-human geometric patterns in the latent space.
+              The platform is built for scalability, used by newsrooms and
+              financial institutions to verify large-scale data dumps. It
+              provides detailed forensic reports that break down whether a
+              piece of content is purely human, purely synthetic, or a "hybrid"
+              (a real video with an AI-altered audio track), which is a common
+              tactic in political disinformation campaigns.
+            </p>
+          </div>
+          <div class="tl-tool-grid__media">
+            <img src="assets/figma/tool-reality-defender.png" alt="Reality Defender" />
+          </div>
+        </div>
+
+        <div
+          id="tool-hive"
+          class="tl-tool-grid"
+          data-href="https://thehive.ai/"
+          data-external="true"
+        >
+          <div class="tl-tool-grid__media">
+            <img src="assets/figma/tool-hive-detector.png" alt="Hive AI Detector" />
+          </div>
+          <div class="tl-tool-grid__text">
+            <div class="tl-tool-pill">
+              <span class="tl-tag">Tool - 3 :</span>
+              <span>Hive AI Detector</span>
+            </div>
+            <p>
+              <strong>Function:</strong> Identifies content generated by models
+              like Midjourney, DALL-E, or ChatGPT.<br /><br />
+              <strong>Technical Depth:</strong> Hive is the industry standard
+              for identifying "model-specific" origins. While other tools look
+              for generic "fakery," Hive is trained on the specific output
+              signatures of the world's most powerful generators, including
+              Midjourney (v4 through v6), DALL-E 3, and Adobe Firefly. This
+              granularity is vital because each model has its own "bias" in how
+              it renders textures, hair, and backgrounds. Hive's text detector
+              is similarly robust, focusing on "perplexity" and "burstiness",
+              two statistical measures of how predictable a text sequence is.
+              Since LLMs like ChatGPT function by predicting the most likely
+              next word, their outputs often lack the chaotic variability of
+              human thought. Hive quantifies this predictability to assign a
+              percentage-based confidence rating. This tool is essential for
+              educators, journalists, and content moderators who need to
+              differentiate between human-crafted narratives and
+              algorithmically optimized filler.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="traceability-tools" class="tl-section" style="padding-top: 1rem">
+      <div class="wrap">
+        <h2 class="tl-h2">Advanced Traceability Tools</h2>
+        <a
+          class="tl-rcard tl-rcard--trace tl-card-link"
+          href="https://lens.google/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <h3>Google Lens : Powerful reverse image search to find original contexts.</h3>
+          <p>
+            By performing a reverse image search, Google Lens doesn't just find
+            copies; it analyzes the objects, landmarks, and text within a frame
+            to find the original source or related news coverage. It is an
+            essential first step in verifying whether an image has been taken
+            out of context.
+          </p>
+        </a>
+        <a
+          class="tl-rcard tl-rcard--trace tl-card-link"
+          href="https://tineye.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <h3>TinEye : Professional image "fingerprinting" and tracking..</h3>
+          <p>
+            Unlike standard search, TinEye creates a unique digital signature
+            for every image, allowing it to find exact matches even if the
+            image has been cropped, resized, or color-edited. This makes it a
+            professional-grade tool for tracking how a specific piece of
+            misinformation has spread and evolved across the web.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <section id="fact-checking" class="tl-section" style="padding-top: 0">
+      <div class="wrap">
+        <h2 class="tl-h2">Fact-Checking Directory (Human Verification)</h2>
+        <div class="tl-fact-grid">
+          <a
+            class="tl-fact tl-card-link"
+            href="https://www.snopes.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="assets/figma/logo-snopes.png" alt="Snopes" />
+            <div>
+              <h4>Snopes</h4>
+              <p>The definitive Internet reference source for urban legends and rumors.</p>
+            </div>
+          </a>
+          <a
+            class="tl-fact tl-card-link"
+            href="https://www.reuters.com/fact-check/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="assets/figma/logo-reuters-fact-check.png"
+              alt="Reuters Fact Check"
+            />
+            <div>
+              <h4>Reuters Fact Check</h4>
+              <p>Global news verification and visual media debunking.</p>
+            </div>
+          </a>
+          <a
+            class="tl-fact tl-card-link"
+            href="https://fullfact.org/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="assets/figma/logo-full-fact.png" alt="Full Fact" />
+            <div>
+              <h4>Full Fact</h4>
+              <p>Independent fact-checking charity providing neutral analysis.</p>
+            </div>
+          </a>
+          <a
+            class="tl-fact tl-card-link"
+            href="https://www.factcheck.org/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="assets/figma/logo-factcheck-org.png" alt="FactCheck.org" />
+            <div>
+              <h4>FactCheck.org</h4>
+              <p>A nonpartisan "consumer advocate" for voters.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="tl-footer">
+      <div class="wrap">
+        <div class="tl-footer__grid">
+          <div>
+            <div class="tl-footer__brand">TruthLens</div>
+            <p style="margin: 0; max-width: 280px">
+              Spot the fake. Know the truth.
+            </p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="detection.html">Detection</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Research</h4>
+            <ul>
+              <li><a href="research.html">Research Hub</a></li>
+              <li><a href="research-key-studies.html">Key Studies</a></li>
+              <li><a href="research-news.html">News</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="resources.html">Overview</a></li>
+              <li><a href="resources-verification-hub.html">Verification Hub</a></li>
+              <li><a href="resources-ai-risks.html">AI Risks &amp; Detection</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="tl-footer__legal">&copy; TruthLens</p>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+  </body>
+</html>
+

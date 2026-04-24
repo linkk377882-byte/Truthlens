@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TruthLens - Spot the fake. Know the truth.</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="tl-home-page">
+    <header class="tl-header">
+      <div class="tl-header__inner wrap">
+        <a class="tl-brand" href="index.html">
+          <img
+            src="assets/figma/logo-mark.svg"
+            width="24"
+            height="24"
+            alt=""
+          />
+          <span class="tl-brand__text">TruthLens</span>
+        </a>
+        <button
+          type="button"
+          class="tl-nav-toggle"
+          aria-expanded="false"
+          aria-controls="tl-nav"
+        >
+          Menu
+        </button>
+        <nav id="tl-nav" class="tl-nav" aria-label="Primary">
+          <div class="tl-nav__track">
+            <a class="tl-nav__item is-active" href="index.html">Home</a>
+            <a class="tl-nav__item" href="detection.html">Detection</a>
+            <div class="tl-nav__drop">
+              <a class="tl-nav__item" href="research.html">Research</a>
+              <div class="tl-nav__drop-panel tl-nav__drop-panel--soft tl-nav__drop-panel--research" role="menu">
+                <a href="research-key-studies.html" role="menuitem">Key Studies</a>
+                <a href="research-news.html" role="menuitem">News</a>
+              </div>
+            </div>
+            <div class="tl-nav__drop">
+              <a class="tl-nav__item" href="resources.html">Resources</a>
+              <div class="tl-nav__drop-panel tl-nav__drop-panel--soft tl-nav__drop-panel--resources" role="menu">
+                <a href="resources-verification-hub.html" role="menuitem">Verification Hub</a>
+                <a href="resources-ai-risks.html" role="menuitem">AI Risks &amp; Detection</a>
+              </div>
+            </div>
+          </div>
+          <a
+            class="tl-contact"
+            href="mailto:hello@truthlens.example"
+          >
+            <img
+              src="assets/figma/phone-icon.svg"
+              alt=""
+              width="18"
+              height="18"
+            />
+            <span>Contact Us</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="tl-hero">
+      <div class="tl-hero__media" aria-hidden="true">
+        <img src="assets/figma/hero-banner.png" alt="" />
+      </div>
+      <div class="tl-hero__shade" aria-hidden="true"></div>
+      <div class="tl-hero__content">
+        <h1 class="tl-h1">Spot the fake. Know the truth.</h1>
+      </div>
+    </section>
+
+    <section class="tl-section">
+      <div class="wrap">
+        <h2 class="tl-h2" style="text-align: center">What is Misinformation?</h2>
+        <p class="tl-lead">
+          Misinformation is false or inaccurate information that people share
+          without meaning to deceive others. It can appear in many forms, such
+          as fake news articles, edited images, misleading videos, or
+          AI-generated content. With the rise of tools like ChatGPT and
+          deepfake generators, misinformation has become more realistic and
+          harder to recognize. In some cases, people may share misinformation
+          simply because they trust the source or find the content interesting,
+          not because they intend to harm others. However, even without bad
+          intentions, spreading misinformation can still cause confusion and
+          harm. Understanding what misinformation is can help people avoid
+          spreading it by accident and encourage them to check facts before
+          sharing.
+        </p>
+      </div>
+    </section>
+
+    <section class="tl-section">
+      <div class="wrap">
+        <h2 class="tl-h2">Where it Exists?</h2>
+        <div class="tl-where-grid">
+          <a
+            class="tl-tile tl-tile--olive tl-card-link"
+            href="resources-ai-risks.html#digital-literacy"
+          >
+            <img class="tl-tile__icon" src="assets/figma/icon-social-media.svg" alt="" />
+            <div class="tl-tile__copy">
+              <h3 class="tl-tile__title">Social Media</h3>
+              <p>
+                Misinformation exists widely across the internet, especially on
+                platforms where content is shared quickly. On social media
+                like Facebook, Twitter, and TikTok, false information can go
+                viral within hours because users often share posts without
+                checking their accuracy.
+              </p>
+            </div>
+          </a>
+          <a
+            class="tl-tile tl-tile--slate tl-card-link"
+            href="resources-verification-hub.html#fact-checking"
+          >
+            <img class="tl-tile__icon" src="assets/figma/icon-messaging-apps.svg" alt="" />
+            <div class="tl-tile__copy">
+              <h3 class="tl-tile__title">Messaging Apps</h3>
+              <p>
+                Manipulated videos circulate on YouTube, TikTok, and other
+                video platforms.
+              </p>
+            </div>
+          </a>
+          <a
+            class="tl-tile tl-tile--slate tl-card-link"
+            href="research-news.html"
+          >
+            <img class="tl-tile__icon" src="assets/figma/icon-online-news.svg" alt="" />
+            <div class="tl-tile__copy">
+              <h3 class="tl-tile__title">Online News &amp; Blogs</h3>
+              <p>
+                Fake or AI-generated news articles also appear on online news
+                websites and blogs, some of which are designed to look like
+                real news sources.
+              </p>
+            </div>
+          </a>
+          <a
+            class="tl-tile tl-tile--olive tl-card-link"
+            href="resources-verification-hub.html#tool-deepware"
+          >
+            <img class="tl-tile__icon" src="assets/figma/icon-deepfake-videos.svg" alt="" />
+            <div class="tl-tile__copy">
+              <h3 class="tl-tile__title">Deepfake Videos</h3>
+              <p>
+                Deepfake videos are commonly found on YouTube and other video
+                platforms, where they can imitate celebrities, politicians, or
+                ordinary people saying things they never said.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tl-detect-band">
+      <div class="tl-detect-band__bg" aria-hidden="true">
+        <img src="assets/figma/detection-section-bg.png" alt="" />
+      </div>
+      <div class="tl-detect-band__overlay" aria-hidden="true"></div>
+      <div class="tl-detect-band__inner wrap">
+        <h2 class="tl-h2" style="text-align: center">Detection Methods</h2>
+        <p class="tl-lead">
+          In today's exponential growth of AI content generation ability, how
+          can we distinguish whether the author behind the screen is a human or
+          an algorithm?
+        </p>
+        <a class="tl-detect-row tl-card-link" href="detection.html#detect-algorithm">
+          <span class="tl-detect-row__tag is-accent">Algorithmic Detectors</span>
+          <p>
+            Use machine learning models to capture "confusion" and "suddenness"
+            in the text.
+          </p>
+        </a>
+        <a class="tl-detect-row tl-card-link" href="detection.html#detect-provenance">
+          <span class="tl-detect-row__tag">Digital Watermarking &amp; Provenance</span>
+          <p>
+            Introduce cutting-edge protocols such as C2PA to track the digital
+            fingerprints of content.
+          </p>
+        </a>
+        <a class="tl-detect-row tl-card-link" href="detection.html#detect-forensics">
+          <span class="tl-detect-row__tag">Forensic Analysis</span>
+          <p>
+            Reveal the common loopholes of AI in dealing with the nuances of
+            light and shadow, logic and language.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <section class="tl-section tl-home-models">
+      <div class="wrap tl-split">
+        <div>
+          <h2 class="tl-h2" style="text-align: left">AI Models</h2>
+          <p class="tl-body" style="text-align: left; max-width: none">
+            <strong>Decode the Algorithms:</strong> Understanding the Engines
+            of AI Content<br /><br />
+            Behind every AI-generated image or video lies a complex
+            algorithmic process. To effectively detect misinformation, we must
+            first understand how it is built. Our AI Models resource provides a
+            deep dive into the most influential generative engines today. Learn
+            their operational logic, their unique "digital fingerprints," and
+            why models like Stable Diffusion or Wan 2.6 are transforming the
+            information landscape in 2026.
+          </p>
+          <a class="tl-btn-lime tl-btn-lime--home-cta" href="resources-ai-risks.html#ai-models">
+            <span>Learn More</span>
+            <span class="tl-btn-lime__arrow" aria-hidden="true">&#8599;</span>
+          </a>
+        </div>
+        <div class="tl-split__visual" data-href="resources-ai-risks.html#ai-models">
+          <img
+            src="assets/figma/ai-models-visual.png"
+            alt="Collage representing AI-generated media"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="tl-section">
+      <div class="wrap">
+        <div class="tl-impact-head">
+          <h2 class="tl-h2">The Impact of AI-Generated Misinformation</h2>
+          <p class="tl-body">
+            AI-generated misinformation has a strong and measurable impact on
+            society.
+          </p>
+        </div>
+        <div class="tl-bento">
+          <div class="tl-bento__col">
+            <article
+              class="tl-bento__card tl-bento__card--lime tl-bento__card--metric"
+              data-href="research-key-studies.html"
+            >
+              <h3>AI Misinformation Spread Speed</h3>
+              <p>
+                Research has confirmed that false information spreads
+                approximately 70% faster than true information on social media
+                platforms. This is because fake content is often designed to be
+                more surprising, emotional, or controversial, which makes people
+                more likely to click, share, and comment without checking the
+                facts first.
+              </p>
+              <div class="tl-impact-visual">
+                <p class="tl-stat-big">70%</p>
+                <div class="tl-bars" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </article>
+            <article
+              class="tl-bento__card tl-bento__card--soft tl-bento__card--consequence"
+              data-href="research-news.html"
+            >
+              <h3>Real-world consequences:</h3>
+              <p>
+                When people believe AI-generated misinformation, it can lead to
+                serious problems. For example, fake medical advice may cause
+                people to avoid real treatment. False political information can
+                influence elections. Misleading news about emergencies may create
+                panic and confusion. Even when the misinformation is not created
+                with bad intentions, the harm it causes can still be significant.
+              </p>
+            </article>
+          </div>
+          <div class="tl-bento__col">
+            <article
+              class="tl-bento__card tl-bento__card--soft tl-bento__card--assistant"
+              data-href="resources-ai-risks.html#ai-models"
+            >
+              <h3>AI Assistant Errors</h3>
+              <p>
+                A large-scale study tested over 3,000 responses from popular AI
+                assistants like ChatGPT, Copilot, Gemini, and Perplexity. The
+                study found that 45% of all AI answers had at least one
+                significant issue, including factual errors, hallucinated details,
+                and outdated information. Additionally, <span class="tl-highlight"
+                  >20%</span
+                >
+                of responses contained major accuracy issues that could seriously
+                mislead users who trust these tools.
+              </p>
+            </article>
+            <article
+              class="tl-bento__card tl-bento__card--lime tl-bento__card--why"
+              data-href="resources-ai-risks.html#digital-literacy"
+            >
+              <h3>Why it matters</h3>
+              <p>
+                As AI tools become more powerful and accessible, the amount of
+                misinformation is likely to increase. Many people cannot tell the
+                difference between human-written and AI-generated content. At the
+                same time, false information spreads faster than corrections or
+                fact-checks. This makes media literacy and critical thinking more
+                important than ever. Individuals should always check multiple
+                sources before sharing information, and technology companies have
+                a responsibility to reduce the spread of fake content on their
+                platforms.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="tl-footer">
+      <div class="wrap">
+        <div class="tl-footer__grid">
+          <div>
+            <div class="tl-footer__brand">TruthLens</div>
+            <p style="margin: 0; max-width: 280px">
+              Spot the fake. Know the truth.
+            </p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="detection.html">Detection</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Research</h4>
+            <ul>
+              <li><a href="research.html">Research Hub</a></li>
+              <li><a href="research-key-studies.html">Key Studies</a></li>
+              <li><a href="research-news.html">News</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="resources.html">Overview</a></li>
+              <li><a href="resources-verification-hub.html">Verification Hub</a></li>
+              <li><a href="resources-ai-risks.html">AI Risks &amp; Detection</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="tl-footer__legal">&copy; TruthLens</p>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+  </body>
+</html>
+
